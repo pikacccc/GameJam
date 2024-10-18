@@ -37,11 +37,11 @@ namespace Runtime.GamePlay.BuffSystem
     {
         public static string BuffPath = "Buff/";
 
-        public static BuffInfo CreateBuff(string buffName, GameObject create, GameObject target = null)
+        public static BuffInfo AddBuff(string buffName, GameObject creator, GameObject target = null)
         {
             BuffData data = ResourceManager.Instance.LoadScriptableObj<BuffData>(BuffPath + buffName);
             var buff = new BuffInfo();
-            buff.creator = create;
+            buff.creator = creator;
             buff.target = target;
             buff.curStack = 1;
             buff.buffData = data;

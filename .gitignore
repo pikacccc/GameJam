@@ -6,5 +6,7 @@ Temp
 UserSettings
 .idea
 *.csproj
+.vs
+.vsconfig
 
 GameJam.sln

@@ -177,17 +177,17 @@ PrefabInstance:
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 3.2223012
+      value: 2.7644124
       objectReference: {fileID: 0}
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.5385108
+      value: 1.3095
       objectReference: {fileID: 0}
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.305479
+      value: -4.57
       objectReference: {fileID: 0}
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
@@ -232,7 +232,7 @@ PrefabInstance:
     - target: {fileID: 9220094902665308517, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_Name
-      value: Brick (6)
+      value: Brick
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -555,7 +555,7 @@ MonoBehaviour:
   levelElementData:
     ballAttr:
       isMove: 0
-      speed: 12
+      speed: 8
       maxReboundsCount: 99999
       curReboundsCount: 0
     oriBuffList: []
@@ -645,7 +645,7 @@ PrefabInstance:
     - target: {fileID: 9220094902665308517, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_Name
-      value: Brick (8)
+      value: Brick
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -669,17 +669,17 @@ PrefabInstance:
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 4.9318
+      value: 2.7805486
       objectReference: {fileID: 0}
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.817311
+      value: 1.2044
       objectReference: {fileID: 0}
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.644521
+      value: 9.5
       objectReference: {fileID: 0}
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
@@ -724,7 +724,7 @@ PrefabInstance:
     - target: {fileID: 9220094902665308517, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_Name
-      value: Brick (1)
+      value: Brick
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -753,12 +753,12 @@ PrefabInstance:
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.7173107
+      value: 4.13
       objectReference: {fileID: 0}
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.7635208
+      value: 2.33
       objectReference: {fileID: 0}
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
@@ -768,7 +768,7 @@ PrefabInstance:
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.99994355
       objectReference: {fileID: 0}
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
@@ -783,7 +783,7 @@ PrefabInstance:
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.010624845
       objectReference: {fileID: 0}
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
@@ -798,12 +798,12 @@ PrefabInstance:
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 1.218
       objectReference: {fileID: 0}
     - target: {fileID: 9220094902665308517, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_Name
-      value: Brick (3)
+      value: Brick
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -827,17 +827,17 @@ PrefabInstance:
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 5.7068
+      value: 3.748797
       objectReference: {fileID: 0}
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.947311
+      value: 7.7091
       objectReference: {fileID: 0}
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.524521
+      value: 7.05
       objectReference: {fileID: 0}
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
@@ -906,17 +906,17 @@ PrefabInstance:
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 4.4595366
+      value: 2.8371572
       objectReference: {fileID: 0}
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.6149108
+      value: 8.2928
       objectReference: {fileID: 0}
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.13432074
+      value: 1.0269
       objectReference: {fileID: 0}
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
@@ -926,7 +926,7 @@ PrefabInstance:
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9483787
+      value: 0.9692463
       objectReference: {fileID: 0}
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
@@ -941,7 +941,7 @@ PrefabInstance:
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.3171402
+      value: 0.24609286
       objectReference: {fileID: 0}
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
@@ -956,12 +956,12 @@ PrefabInstance:
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -36.98
+      value: 28.493
       objectReference: {fileID: 0}
     - target: {fileID: 9220094902665308517, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_Name
-      value: Brick (7)
+      value: Brick
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1021,12 +1021,12 @@ PrefabInstance:
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.237311
+      value: 5.6500006
       objectReference: {fileID: 0}
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.4145207
+      value: 2.981
       objectReference: {fileID: 0}
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
@@ -1071,7 +1071,7 @@ PrefabInstance:
     - target: {fileID: 9220094902665308517, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_Name
-      value: Brick (4)
+      value: Brick
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1095,17 +1095,17 @@ PrefabInstance:
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 1.7952449
       objectReference: {fileID: 0}
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.2473106
+      value: 0.9477
       objectReference: {fileID: 0}
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.1654792
+      value: -1.6
       objectReference: {fileID: 0}
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
@@ -1150,7 +1150,7 @@ PrefabInstance:
     - target: {fileID: 9220094902665308517, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_Name
-      value: Brick (5)
+      value: Brick
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1253,17 +1253,17 @@ PrefabInstance:
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 3.8987505
+      value: 2.031249
       objectReference: {fileID: 0}
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.3887107
+      value: 0.7462
       objectReference: {fileID: 0}
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.9834208
+      value: 3.92
       objectReference: {fileID: 0}
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
@@ -1273,22 +1273,22 @@ PrefabInstance:
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.93815583
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.34621352
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
@@ -1303,12 +1303,12 @@ PrefabInstance:
     - target: {fileID: 302653295392143886, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -40.512
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9220094902665308517, guid: 069437815c2e8b544895807635fdf1ad,
         type: 3}
       propertyPath: m_Name
-      value: Brick (2)
+      value: Brick
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

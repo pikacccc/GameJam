@@ -26,8 +26,8 @@ namespace Runtime.PKGameCore
             var obj = Instantiate(this.gameInit);
             obj.GetComponent<GameInit>().Init();
 
-            yield return null;
-            if (gameScene != "") SceneManager.LoadScene(gameScene);
+            // yield return null;
+            // if (gameScene != "") SceneManager.LoadScene(gameScene);
         }
     }
 }

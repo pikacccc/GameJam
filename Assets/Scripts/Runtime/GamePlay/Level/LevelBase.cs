@@ -19,7 +19,7 @@ namespace Runtime.GamePlay.Level
 
         //需要动态加载出来的场景元素
         private List<BallMovement> _balls = new();
-        // private LevelElementBase _racket;
+        private Racket _racket;
         private Ejector _ejector;
 
         public void OnLevelInit()
@@ -40,7 +40,7 @@ namespace Runtime.GamePlay.Level
                 ball.OnLevelInit(levelElementData);
             }
 
-            // _racket.OnLevelInit(levelElementData);
+            _racket.OnLevelInit(levelElementData);
         }
 
         private void InitEjector()
@@ -67,6 +67,9 @@ namespace Runtime.GamePlay.Level
 
         private void InitRacket()
         {
+            GameObject ballObj = ResourceManager.Instance.InstantiatePrefab(ElementPath + "Racket", null,
+                levelElementData.oriRacketPoint.transform.position, Quaternion.identity, transform);
+            _racket = ballObj.GetComponent<Racket>();
         }
 
         public void OnLevelStart()
@@ -81,7 +84,7 @@ namespace Runtime.GamePlay.Level
                 ball.OnLevelStart();
             }
 
-            // _racket.OnLevelStart();
+            _racket.OnLevelStart();
         }
 
         public void OnLevelRestart()
@@ -96,7 +99,7 @@ namespace Runtime.GamePlay.Level
                 ball.OnLevelRestart();
             }
 
-            // _racket.OnLevelRestart();
+            _racket.OnLevelRestart();
         }
 
         public void OnLevelPause()
@@ -111,7 +114,7 @@ namespace Runtime.GamePlay.Level
                 ball.OnLevelPause();
             }
 
-            // _racket.OnLevelPause();
+            _racket.OnLevelPause();
         }
 
         public void OnLevelEnd()
@@ -126,7 +129,7 @@ namespace Runtime.GamePlay.Level
                 ball.OnLevelEnd();
             }
 
-            // _racket.OnLevelEnd();
+            _racket.OnLevelEnd();
         }
 
         public void Tick(float time)
@@ -142,7 +145,7 @@ namespace Runtime.GamePlay.Level
             }
 
             _ejector.Tick(time);
-            // _racket.Tick(time);
+            _racket.Tick(time);
         }
 
         public void FixedTick(float time)
@@ -157,7 +160,7 @@ namespace Runtime.GamePlay.Level
                 ball.FixedTick(time);
             }
 
-            // _racket.FixedTick(time);
+            _racket.FixedTick(time);
         }
 
         public void LateTick(float time)
@@ -172,7 +175,7 @@ namespace Runtime.GamePlay.Level
                 ball.LateTick(time);
             }
 
-            // _racket.LateTick(time);
+            _racket.LateTick(time);
         }
 
         public LevelElementBase FindLevelElement(string elementName)
@@ -183,10 +186,10 @@ namespace Runtime.GamePlay.Level
                 tempElement = _balls?.Find(s => s.gameObject.name == elementName);
             }
 
-            // if (tempElement == null && tempElement.gameObject.name == _racket.gameObject.name)
-            // {
-            //     tempElement = _racket;
-            // }
+            if (tempElement == null && tempElement.gameObject.name == _racket.gameObject.name)
+            {
+                tempElement = _racket;
+            }
 
             return tempElement;
         }

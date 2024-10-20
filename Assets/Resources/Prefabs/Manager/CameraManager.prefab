@@ -48,11 +48,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camBrainObj: {fileID: 6915560370220120881}
   virCamObj: {fileID: 4072397485978333621}
-  useZoom: 1
+  useZoom: 0
   zoomMultiplier: 1
   minZoom: 10
-  maxZoom: 40
-  originalOrthoSize: 20
+  maxZoom: 60
+  cameraSize: 47.5
+  useMove: 1
+  cameraSpeed: 3.5
 --- !u!1 &1153693079554179075
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,7 +199,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
   m_Lens:
-    FieldOfView: 40
+    FieldOfView: 47.5
     OrthographicSize: 10
     NearClipPlane: 0.01
     FarClipPlane: 5000
@@ -308,7 +310,7 @@ MonoBehaviour:
     m_AmplitudeGain: 2
     m_FrequencyGain: 1.5
     m_Duration: 0.2
-    m_NoiseOffsets: {x: 0, y: 0, z: 0}
+    m_NoiseOffsets: {x: 596.67346, y: 66.46814, z: -888.6433}
 --- !u!1 &6915560370220120881
 GameObject:
   m_ObjectHideFlags: 0
@@ -378,7 +380,7 @@ Camera:
     height: 1
   near clip plane: 0.01
   far clip plane: 5000
-  field of view: 40
+  field of view: 47.5
   orthographic: 0
   orthographic size: 10
   m_Depth: -1

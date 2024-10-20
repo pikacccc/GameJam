@@ -19,7 +19,7 @@ namespace Runtime.GamePlay.Level
 
         //需要动态加载出来的场景元素
         private List<BallMovement> _balls = new();
-        private LevelElementBase _racket;
+        // private LevelElementBase _racket;
         private Ejector _ejector;
 
         public void OnLevelInit()
@@ -81,7 +81,7 @@ namespace Runtime.GamePlay.Level
                 ball.OnLevelStart();
             }
 
-            _racket.OnLevelStart();
+            // _racket.OnLevelStart();
         }
 
         public void OnLevelRestart()
@@ -96,7 +96,7 @@ namespace Runtime.GamePlay.Level
                 ball.OnLevelRestart();
             }
 
-            _racket.OnLevelRestart();
+            // _racket.OnLevelRestart();
         }
 
         public void OnLevelPause()
@@ -111,7 +111,7 @@ namespace Runtime.GamePlay.Level
                 ball.OnLevelPause();
             }
 
-            _racket.OnLevelPause();
+            // _racket.OnLevelPause();
         }
 
         public void OnLevelEnd()
@@ -126,7 +126,7 @@ namespace Runtime.GamePlay.Level
                 ball.OnLevelEnd();
             }
 
-            _racket.OnLevelEnd();
+            // _racket.OnLevelEnd();
         }
 
         public void Tick(float time)
@@ -183,10 +183,10 @@ namespace Runtime.GamePlay.Level
                 tempElement = _balls?.Find(s => s.gameObject.name == elementName);
             }
 
-            if (tempElement == null && tempElement.gameObject.name == _racket.gameObject.name)
-            {
-                tempElement = _racket;
-            }
+            // if (tempElement == null && tempElement.gameObject.name == _racket.gameObject.name)
+            // {
+            //     tempElement = _racket;
+            // }
 
             return tempElement;
         }

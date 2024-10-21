@@ -161,6 +161,7 @@ namespace Runtime.GamePlay.Level
             }
 
             _racket.FixedTick(time);
+            _ejector.FixedTick(time);
         }
 
         public void LateTick(float time)
@@ -176,6 +177,7 @@ namespace Runtime.GamePlay.Level
             }
 
             _racket.LateTick(time);
+            _ejector.LateTick(time);
         }
 
         public LevelElementBase FindLevelElement(string elementName)

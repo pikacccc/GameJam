@@ -11,7 +11,8 @@ namespace Runtime.GamePlay.Ball
         public BallAttr ballAttr;
 
         public LayerMask collLayer;
-
+        public LayerMask camWall;
+        
         [NonSerialized] public Vector3 MoveDir;
 
         private float _radius = 0.5f;
@@ -56,8 +57,8 @@ namespace Runtime.GamePlay.Ball
         {
             base.FixedTick(time);
             if (!ballAttr.isMove) return;
-            CheckBallInCam();
-            CameraRebounds();
+            // CheckBallInCam();
+            // CameraRebounds();
             Move(time);
         }
 
@@ -92,6 +93,11 @@ namespace Runtime.GamePlay.Ball
         {
             int otherLayer = other.gameObject.layer;
             Vector3 nor = other.contacts[0].normal;
+            if ((camWall & (1 << otherLayer)) != 0)
+            {
+                Rebounds(nor);
+                return;
+            }
             if ((collLayer & (1 << otherLayer)) != 0 && ballAttr.curReboundsCount < ballAttr.maxReboundsCount)
             {
                 Rebounds(nor);

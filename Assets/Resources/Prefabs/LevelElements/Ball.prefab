@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3418987449446854679}
   - component: {fileID: 5663734596705794525}
   - component: {fileID: 4743946205060257155}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,6 +169,9 @@ MonoBehaviour:
   collLayer:
     serializedVersion: 2
     m_Bits: 448
+  camWall:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!1 &7954287028309938838
 GameObject:
   m_ObjectHideFlags: 0
@@ -180,7 +183,7 @@ GameObject:
   - component: {fileID: 6588126857438136376}
   - component: {fileID: 4915573184970557494}
   - component: {fileID: 2527608489154514069}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ namespace Runtime.GamePlay.Ball
 
         public LayerMask collLayer;
         public LayerMask camWall;
-        
+
         [NonSerialized] public Vector3 MoveDir;
 
         private float _radius = 0.5f;
@@ -24,7 +24,6 @@ namespace Runtime.GamePlay.Ball
 
         public override void OnLevelInit(LevelElementData elementData)
         {
-            ballAttr = elementData.ballAttr;
         }
 
         public override void OnLevelRestart()
@@ -98,11 +97,23 @@ namespace Runtime.GamePlay.Ball
                 Rebounds(nor);
                 return;
             }
+
             if ((collLayer & (1 << otherLayer)) != 0 && ballAttr.curReboundsCount < ballAttr.maxReboundsCount)
             {
+                var element = other.gameObject.GetComponent<LevelElementBase>();
+                ChangeSpeed(element.data.reboundsSpeedRate);
                 Rebounds(nor);
                 ballAttr.curReboundsCount++;
             }
+        }
+
+        private void ChangeSpeed(float rate)
+        {
+            var ballSpeed = ballAttr.speed * rate;
+            var finaSpeed = ballSpeed;
+            if (ballSpeed < ballAttr.minSpeed) finaSpeed = ballAttr.minSpeed;
+            if (ballSpeed > ballAttr.maxSpeed) finaSpeed = ballAttr.maxSpeed;
+            ballAttr.speed = finaSpeed;
         }
 
         public void CheckBallInCam()
@@ -145,7 +156,7 @@ namespace Runtime.GamePlay.Ball
         public void CameraRebounds()
         {
             if (_camRebounds) return;
-            if(_inCam) return;
+            if (_inCam) return;
             _camRebounds = true;
             var camera = CameraManager.Instance.MainCamera;
             var scale = transform.localScale.x;

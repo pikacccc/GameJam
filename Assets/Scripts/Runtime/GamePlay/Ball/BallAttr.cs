@@ -8,6 +8,8 @@ namespace Runtime.GamePlay.Ball
     {
         public bool isMove;
         public float speed;
+        public float maxSpeed;
+        public float minSpeed;
         public int maxReboundsCount;
         public int curReboundsCount;
     }

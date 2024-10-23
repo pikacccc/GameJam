@@ -9,7 +9,6 @@ namespace Runtime.GamePlay.Level
     [Serializable]
     public class LevelElementData
     {
-        public BallAttr ballAttr;
         public List<BuffData> oriBuffList;
         public GameObject oriBallPoint;
         public GameObject oriRacketPoint;

@@ -167,10 +167,18 @@ MonoBehaviour:
     visibleRange: 0
     visibleTime: 0
     visibleDecayRate: 0
+    acceleratingRate: 0
+    acceleratingMaxSpeed: 0
+    decelerationRate: 0
+    decelerationMinSpeed: 0
+    isPeriodicDisplay: 0
+    period: 0
   ballAttr:
     isMove: 0
-    speed: 0
-    maxReboundsCount: 0
+    speed: 5
+    maxSpeed: 12
+    minSpeed: 2
+    maxReboundsCount: 999999
     curReboundsCount: 0
   collLayer:
     serializedVersion: 2

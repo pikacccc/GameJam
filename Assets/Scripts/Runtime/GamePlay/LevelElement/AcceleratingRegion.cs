@@ -1,4 +1,5 @@
-﻿using Runtime.GamePlay.Ball;
+﻿using System;
+using Runtime.GamePlay.Ball;
 using Runtime.GamePlay.Level;
 using UnityEngine;
 
@@ -6,7 +7,7 @@ namespace Runtime.GamePlay.LevelElement
 {
     public class AcceleratingRegion : LevelElementBase
     {
-        private void OnTriggerStay(Collider other)
+        private void OnTriggerStay2D(Collider2D other)
         {
             if (other.gameObject.CompareTag("Ball"))
             {

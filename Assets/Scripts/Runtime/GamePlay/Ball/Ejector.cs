@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using Runtime.GamePlay.Level;
 using Runtime.PKGameCore;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Runtime.GamePlay.Ball
 {
     //发射器
     public class Ejector : LevelElementBase
     {
-        [NonSerialized] public Vector3 shootDir;
-        [NonSerialized] public List<BallMovement> ballList;
+        [NonSerialized] public BallMovement Ball;
 
-        private bool _isShoot;
+        [NonSerialized]public bool IsShoot;
 
         public Transform ray;
         public float rotateSpeed;
@@ -23,25 +23,13 @@ namespace Runtime.GamePlay.Ball
         public override void OnLevelInit(LevelElementData elementData)
         {
             base.OnLevelInit(elementData);
-            _isShoot = false;
-            shootDir = Vector3.zero;
-        }
-
-        public override void Tick(float time)
-        {
-            base.Tick(time);
-            if (Input.GetKeyDown(KeyCode.Space) && !_isShoot)
-            {
-                _isShoot = true;
-                Shoot();
-                ray.gameObject.SetActive(false);
-            }
+            IsShoot = false;
         }
 
         public override void FixedTick(float time)
         {
             base.FixedTick(time);
-            if (_isShoot) return;
+            if (IsShoot) return;
             if (_isForward)
             {
                 ray.Rotate(0, 0, rotateSpeed * time); // 向前旋转
@@ -57,15 +45,6 @@ namespace Runtime.GamePlay.Ball
                 {
                     _isForward = true; // 到达最小角度，开始向前旋转
                 }
-            }
-        }
-
-        public void Shoot()
-        {
-            foreach (var ball in ballList)
-            {
-                ball.MoveDir = -ray.up;
-                ball.SetMoveStatus(true);
             }
         }
     }

@@ -10,7 +10,6 @@ namespace Runtime.GamePlay.Level
     public class LevelElementData
     {
         public List<BuffData> oriBuffList;
-        public GameObject oriBallPoint;
         public GameObject oriRacketPoint;
     }
 }

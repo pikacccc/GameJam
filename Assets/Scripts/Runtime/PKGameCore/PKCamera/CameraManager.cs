@@ -148,5 +148,10 @@ namespace Runtime.PKGameCore.PKCamera
                 IsMove = false;
             }
         }
+        
+        public void SetMoveStatus(bool isMove)
+        {
+            useMove = isMove;
+        }
     }
 }

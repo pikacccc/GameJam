@@ -12,5 +12,7 @@ namespace Runtime.GamePlay.Ball
         public float minSpeed;
         public int maxReboundsCount;
         public int curReboundsCount;
+
+        [NonSerialized] public bool IsDead = false;
     }
 }

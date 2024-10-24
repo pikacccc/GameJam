@@ -1,5 +1,7 @@
-﻿using Runtime.GamePlay.Level;
+﻿using System;
+using Runtime.GamePlay.Level;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Runtime.GamePlay.Ball
 {
@@ -15,6 +17,11 @@ namespace Runtime.GamePlay.Ball
             _canMove = true;
         }
 
+        public void SetMoveStatus(bool isMove)
+        {
+            _canMove = isMove;
+        }
+        
         public override void Tick(float time)
         {
             base.Tick(time);
@@ -48,6 +55,7 @@ namespace Runtime.GamePlay.Ball
         public override void FixedTick(float time)
         {
             base.FixedTick(time);
+            if (!_canMove) return;
             Move(time);
         }
 

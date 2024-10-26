@@ -175,9 +175,9 @@ MonoBehaviour:
     period: 0
   ballAttr:
     isMove: 0
-    speed: 5
-    maxSpeed: 12
-    minSpeed: 2
+    speed: 3
+    maxSpeed: 10
+    minSpeed: 1.5
     maxReboundsCount: 999999
     curReboundsCount: 0
   collLayer:

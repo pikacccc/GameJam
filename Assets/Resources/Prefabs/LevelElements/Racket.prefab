@@ -155,7 +155,7 @@ MonoBehaviour:
     decelerationMinSpeed: 0
     isPeriodicDisplay: 0
     period: 0
-  speed: 6
+  speed: 4
 --- !u!50 &232979971006083054
 Rigidbody2D:
   serializedVersion: 4

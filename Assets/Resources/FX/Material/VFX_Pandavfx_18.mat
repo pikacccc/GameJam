@@ -1,0 +1,537 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: VFX_Pandavfx_18
+  m_Shader: {fileID: 4800000, guid: 446de4ba36021554a94eb3e445fa294c, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _FACE_Y
+  - _MAINTEXUVS_NORMAL
+  m_InvalidKeywords:
+  - _ADDTEX_ON
+  - _BASIC_ON
+  - _CADDTEXUVT_ON
+  - _CUSTOMDATADIS_ON
+  - _DEPTHFADE_ON
+  - _DISORT_ON
+  - _DISSOLVEAR_ON
+  - _DISSOLVEPLUSAR_ON
+  - _DISSOLVETEXUVS_NORMAL
+  - _DISSOLVE_ON
+  - _DISTORTMASKTEXAR_ON
+  - _DISTORTTEXAR_ON
+  - _ENUM1_ALL
+  - _FLOAT26_ON
+  - _FLOAT27_ON
+  - _FLOAT41_ON
+  - _FLOWMAP_ON
+  - _FRESNEL_ON
+  - _IFADDTEXCOLOR_ON
+  - _IFADDTEX_ON
+  - _IFDISSOLVECOLOR_ON
+  - _KEYWORD0_R
+  - _KEYWORD10_A
+  - _KEYWORD12_R
+  - _KEYWORD13_OFF
+  - _KEYWORD19_OFF
+  - _KEYWORD1_R
+  - _KEYWORD20_R
+  - _KEYWORD2_OFF
+  - _KEYWORD4_ON
+  - _KEYWORD5_R
+  - _KEYWORD6_R
+  - _KEYWORD8_ON
+  - _KEYWORD9_ON
+  - _MAINTEX_ON
+  - _MASKALPHARA_ON
+  - _MASKPLUSAR_ON
+  - _MASKTEXUVS_NORMAL
+  - _MASK_ON
+  - _MODE_ON
+  - _NIOSE_ON
+  - _OTHER_ON
+  - _SOFT_STING_ON
+  - _SOT_STING_A_ON
+  - _VERTOFFSET_ON
+  - _VTOAR_ON
+  - _VTOMASKAR_ON
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - AddTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - DissolveTex:
+        m_Texture: {fileID: 2800000, guid: a86231e33317af14a95629bc7d7cec0e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - MainTex:
+        m_Texture: {fileID: 2800000, guid: b5e584932cdc4734fb1f361d63bdac1d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - MaskTex:
+        m_Texture: {fileID: 2800000, guid: 47b3a32dfbdf63544bd348883186911d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - NoiseTex:
+        m_Texture: {fileID: 2800000, guid: a86231e33317af14a95629bc7d7cec0e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - SpecialMaskTex:
+        m_Texture: {fileID: 2800000, guid: e8d1026c7df6c5445b5172c263b32695, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _AddTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CubeMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DepthTex2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DisortTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DissloveTex:
+        m_Texture: {fileID: 2800000, guid: 47be832efe387854aa8f5f2326456939, type: 3}
+        m_Scale: {x: 0.5, y: 0.5}
+        m_Offset: {x: 0, y: 0}
+    - _DissloveTexPlus:
+        m_Texture: {fileID: 2800000, guid: 51d2c599906879740b8c25836fef4bc3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: -0.04}
+    - _DistortMaskTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 0.8}
+        m_Offset: {x: 0, y: 0.15}
+    - _DistortTex:
+        m_Texture: {fileID: 2800000, guid: 11b9d4200832ed3409681f98709d79c4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FlowMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 62789a6cc8bd1eb4b983b8ba0b6f318b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskPlusTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 10}
+        m_Offset: {x: 0, y: -8.32}
+    - _NormalTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample0:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _VATNormalTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _VATPositionTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _VTOMaskTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 2}
+        m_Offset: {x: 0, y: 4.04}
+    - _VTOTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _VertOffset:
+        m_Texture: {fileID: 2800000, guid: 7a89b11ac0a196942823e03530d82f8f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _caiyangtu:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord3:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord4:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AddTex: 1
+    - _AddTexAC: 0
+    - _AddTexAR: 0
+    - _AddTexBlend: 0
+    - _AddTexBlendMode: 0
+    - _AddTexC: 0
+    - _AddTexCV: 0
+    - _AddTexRo: 0
+    - _AddTexTog: 0
+    - _AddTexUVS: 0
+    - _AddTexUspeed: 0
+    - _AddTexVspeed: 0
+    - _AlphaAdd: 0
+    - _Basic: 1
+    - _BlendMode: 10
+    - _CAddTexUV: 0
+    - _CAddTexUVT: 1
+    - _CenterU: 0.5
+    - _CenterV: 0.5
+    - _ColorMask: 15
+    - _Comparison: 8
+    - _CubemapScale: 0
+    - _CullMode: 0
+    - _Cullmode: 0
+    - _CustomDistort: 0
+    - _CustomVAT: 0
+    - _CustomdataDis: 1
+    - _CustomdataDisT: 0
+    - _CustomdataMainTexUV: 0
+    - _CustomdataMaskUV: 0
+    - _DIssloveFactor: 0
+    - _DIssloveSoft: 0.5
+    - _DIssloveWide: 0.138
+    - _DIssolveInstensity: 0.712
+    - _DIssolve_rotat: 0
+    - _DepthF: 0
+    - _DepthFade: 1
+    - _DepthFadeTog: 0
+    - _DepthIntensity2: 0
+    - _DepthfadeFactor: 1
+    - _Depthfadeon: 0
+    - _DirDissolveON: 0
+    - _DisTex_Uspeed: 0.15
+    - _DisTex_Vspeed: 0.15
+    - _Disort: 1
+    - _DisortIntensity: 0
+    - _DisortTog: 0
+    - _Dissolve: 1
+    - _DissolveAR: 1
+    - _DissolveC: 0
+    - _DissolveCV: 0
+    - _DissolveFactorC1: 1
+    - _DissolveFactorC2: 0
+    - _DissolveOffsetUC1: 1
+    - _DissolveOffsetUC2: 0
+    - _DissolveOffsetVC1: 1
+    - _DissolveOffsetVC2: 1
+    - _DissolvePlusAR: 1
+    - _DissolvePlusC: 0
+    - _DissolvePlusCV: 0
+    - _DissolvePlusR: 90
+    - _DissolveTexDivide: 1
+    - _DissolveTexExp: 1
+    - _DissolveTexUVS: 0
+    - _DissolveTexUVS11: 0
+    - _DissolveTexUVS2: 0
+    - _DissolveTog: 0
+    - _DistortAddTex: 0
+    - _DistortDisTex: 1
+    - _DistortFactor: 0.011
+    - _DistortFactorC1: 1
+    - _DistortFactorC2: 3
+    - _DistortMainTex: 1
+    - _DistortMask: 0
+    - _DistortMaskTexAR: 1
+    - _DistortMaskTexC: 0
+    - _DistortMaskTexCV: 0
+    - _DistortMaskTexR: 270
+    - _DistortNormalTex: 1
+    - _DistortRemap: 0
+    - _DistortTexAR: 1
+    - _DistortTex_Uspeed: -0.3
+    - _DistortTex_Vspeed: 0
+    - _Dst: 10
+    - _Enum1: 0
+    - _FNLfanxiangkaiguan: 0
+    - _Face: 1
+    - _Fail: 0
+    - _Float0: 0
+    - _Float1: 0
+    - _Float10: 0.283
+    - _Float11: 0
+    - _Float15: 0
+    - _Float16: 0
+    - _Float17: 0
+    - _Float18: 0
+    - _Float19: 0
+    - _Float2: -0.05
+    - _Float20: 0.05
+    - _Float21: -0.05
+    - _Float22: 0
+    - _Float23: 0
+    - _Float26: 1
+    - _Float27: 1
+    - _Float28: 0
+    - _Float29: 0
+    - _Float3: 0.05
+    - _Float36: 0
+    - _Float37: 0
+    - _Float38: 0
+    - _Float39: 0.4
+    - _Float4: 0
+    - _Float40: 0.5
+    - _Float41: 1
+    - _Float42: 0
+    - _Float43: 0
+    - _Float44: -0.2
+    - _Float45: 0.1
+    - _Float46: 0
+    - _Float47: 0
+    - _Float48: 0
+    - _Float49: 0
+    - _Float5: 0
+    - _Float50: 1
+    - _Float51: 1
+    - _Float52: 0
+    - _Float53: 1
+    - _Float54: 0
+    - _Float56: 0
+    - _Float58: 0
+    - _Float59: 0
+    - _Float6: 0
+    - _Float60: 0
+    - _Float61: 0
+    - _Float62: 0
+    - _Float63: 0
+    - _Float64: 0
+    - _Float65: 0
+    - _Float66: 270
+    - _Float67: 0
+    - _Float68: 0
+    - _Float69: 0
+    - _Float7: 0
+    - _Float70: 0
+    - _Float71: 0
+    - _Float72: 0
+    - _Float73: 0
+    - _Float74: 0
+    - _Float75: 0
+    - _Float76: 0
+    - _Float77: 0
+    - _Float78: 0
+    - _Float79: 0
+    - _Float8: 0.034
+    - _Float80: 0
+    - _Float81: 0
+    - _Float83: 0
+    - _Float84: 0
+    - _Float85: 0
+    - _Float86: 0
+    - _Float87: 0
+    - _Float89: 0
+    - _Float9: 0.022
+    - _Float90: 0
+    - _FlowMapTog: 0
+    - _Flowmap: 1
+    - _Fresnel: 1
+    - _FresnelTog: 0
+    - _Fresnelsoft: 5
+    - _Fresnelwidth: 1
+    - _IfAddTex: 1
+    - _IfAddTexAlpha: 0
+    - _IfAddTexColor: 1
+    - _IfCubemap: 0
+    - _IfCustomLight: 0
+    - _IfDissolveColor: 1
+    - _IfDissolveOffsetC: 0
+    - _IfDissolvePlus: 0
+    - _IfFNLAlpha: 0
+    - _IfFlowmap: 0
+    - _IfMaskColor: 0
+    - _IfMaskPlusTex: 0
+    - _IfNormalDistort: 0
+    - _IfPara: 0
+    - _IfStaticNormal: 0
+    - _IfVAT: 0
+    - _Keyword0: 0
+    - _Keyword1: 0
+    - _Keyword10: 1
+    - _Keyword11: 0
+    - _Keyword12: 0
+    - _Keyword13: 0
+    - _Keyword14: 0
+    - _Keyword15: 0
+    - _Keyword16: 0
+    - _Keyword17: 0
+    - _Keyword18: 0
+    - _Keyword19: 1
+    - _Keyword2: 0
+    - _Keyword20: 0
+    - _Keyword21: 0
+    - _Keyword22: 0
+    - _Keyword23: 0
+    - _Keyword24: 0
+    - _Keyword25: 0
+    - _Keyword26: 0
+    - _Keyword27: 0
+    - _Keyword28: 0
+    - _Keyword3: 0
+    - _Keyword4: 1
+    - _Keyword5: 0
+    - _Keyword6: 0
+    - _Keyword7: 0
+    - _Keyword8: 1
+    - _Keyword9: 1
+    - _LightScale: 0
+    - _MainAlpha: 1
+    - _MainOffsetUC1: 0
+    - _MainOffsetUC2: 0
+    - _MainOffsetVC1: 0
+    - _MainOffsetVC2: 1
+    - _MainTex: 1
+    - _MainTexAC: 0
+    - _MainTexTog: 0
+    - _MainTexUVS: 0
+    - _MainTex_Uspeed: 0
+    - _MainTex_Vspeed: 0
+    - _MainTex_ar: 0
+    - _MainTex_rotat: 0
+    - _MaintexC: 0
+    - _MaintexCV: 0
+    - _Mask: 1
+    - _MaskAlphaRA: 1
+    - _MaskC: 0
+    - _MaskCV: 0
+    - _MaskOffsetUC1: 0
+    - _MaskOffsetUC2: 2
+    - _MaskOffsetVC1: 0
+    - _MaskOffsetVC2: 3
+    - _MaskPlusAR: 1
+    - _MaskPlusC: 0
+    - _MaskPlusCV: 0
+    - _MaskPlusR: 0
+    - _MaskPlusUspeed: 0
+    - _MaskPlusVspeed: 0
+    - _MaskTexUVS: 0
+    - _MaskTexUVS1: 0
+    - _MaskTog: 0
+    - _Mask_Uspeed: 0
+    - _Mask_Vspeed: 0
+    - _Mask_rotat: 90
+    - _Mask_scale: 1
+    - _Mode: 1
+    - _Niose: 1
+    - _NoiseTog: 0
+    - _NormalScale: 0
+    - _NormalTexC: 0
+    - _NormalTexCV: 0
+    - _NormalTex_Rotat: 0
+    - _NormalTex_Uspeed: 0
+    - _NormalTex_Vspeed: 0
+    - _Other: 1
+    - _Parallax: 0
+    - _ParallaxTog: 0
+    - _ParticleVAT: 0
+    - _Pass: 0
+    - _Reference: 0
+    - _Scr: 5
+    - _ScreenAsMain: 0
+    - _StaticNormalOffset: 0
+    - _StaticNormalScale: 0
+    - _StencilPass: 0
+    - _StencilReference: 0
+    - _StencilStyle: 0
+    - _StencilTest: 0
+    - _ToggleSwitch0: 0
+    - _VATFrameC1: 1
+    - _VATFrameC2: 4
+    - _VATFrameFactor: 0
+    - _VATTime: 0
+    - _VTOAR: 1
+    - _VTOC: 0
+    - _VTOCV: 0
+    - _VTOFactor: 0
+    - _VTOFactorC1: 1
+    - _VTOFactorC2: 4
+    - _VTOMaskAR: 1
+    - _VTOMaskC: 0
+    - _VTOMaskCV: 0
+    - _VTOMaskR: 270
+    - _VTOR: 0
+    - _VTORemap: 0
+    - _VTOTexExp: 1
+    - _VTOTex_Uspeed: 0.8
+    - _VTOTex_Vspeed: 0
+    - _Vertoffset: 1
+    - _VertoffsetTog: 0
+    - _ZTest: 4
+    - _ZWrite: 0
+    - _Ztest: 4
+    - _Zwrite: 0
+    - __dirty: 0
+    - _edge1: 0
+    - _fnl_power: 1
+    - _fnl_sacle: 0
+    - _qubaohedu: 0
+    - _screenVTOon: 0
+    - _softFacotr: 0
+    - _soft_sting: 1
+    - _softback: 0
+    - _sot_sting_A: 1
+    m_Colors:
+    - _AddTexColor: {r: 1, g: 1, b: 1, a: 1}
+    - _AddTexRefine: {r: 1, g: 1, b: 2, a: 0}
+    - _AllColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BackFaceColor: {r: 1, g: 1, b: 1, a: 0}
+    - _Color0: {r: 1.7891151, g: 2.5719705, b: 3.134648, a: 0.15686275}
+    - _Color1: {r: 0.7915135, g: 1.3851967, b: 1.5117195, a: 0.21960784}
+    - _Color2: {r: 1, g: 1, b: 1, a: 1}
+    - _Color4: {r: 1, g: 1, b: 1, a: 1}
+    - _DIssloveColor: {r: 0.43529412, g: 0.43529412, b: 0.43529412, a: 0.8509804}
+    - _DepthColor: {r: 0, g: 0, b: 0, a: 0}
+    - _Dir: {r: 0, g: 0, b: 0, a: 0}
+    - _MainColor: {r: 1, g: 1, b: 1, a: 1}
+    - _MainTexRefine: {r: 1, g: 1, b: 2, a: 0}
+    - _TexCenter: {r: 0, g: 0, b: 0, a: 0}
+    - _Vector0: {r: 1, g: 1, b: 0, a: 0}
+    - _Vector1: {r: 1, g: 1, b: 0, a: 0}
+    - _Vector2: {r: 1, g: 1, b: -0.14, a: 0}
+    - _Vector3: {r: 0.05, g: 1, b: 0, a: 0}
+    - _Vector4: {r: 0.15, g: 1.5, b: 0, a: 0}
+    - _Vector5: {r: 1, g: 1, b: 0, a: 0}
+    - _Vector6: {r: 1, g: 1, b: 0, a: 0}
+    - _Vector7: {r: 1, g: 1, b: 0, a: 0}
+    - _Vector8: {r: 1, g: 1, b: 0, a: 0}
+    - _fnl_color: {r: 1, g: 1, b: 1, a: 0}
+  m_BuildTextureStacks: []

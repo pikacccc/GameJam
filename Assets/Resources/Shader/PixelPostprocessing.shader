@@ -13,7 +13,7 @@ Shader "Custom/PixelPostprocessing"
 
         Tags {
             "RenderType"="Opaque"
-            "RenderPipeline" = "UniversalPipeline"
+            // "RenderPipeline" = "UniversalPipeline"
         }
 
         Pass {

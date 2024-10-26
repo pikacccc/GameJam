@@ -45,4 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelData: {fileID: 11400000, guid: 564531f3dacdce245b319c41c071d810, type: 2}
-  curLevelIndex: 0
+  curLevelIndex: 4

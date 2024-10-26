@@ -11,7 +11,6 @@ namespace Runtime.GamePlay.LevelElement
             if (other.gameObject.CompareTag("Racket"))
             {
                 LevelManager.Instance.EndLevel(true);
-                ;
             }
         }
     }

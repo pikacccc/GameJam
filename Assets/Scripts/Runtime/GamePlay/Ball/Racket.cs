@@ -1,5 +1,7 @@
 ﻿using System;
 using Runtime.GamePlay.Level;
+using Runtime.GamePlay.LevelElement;
+using UnityEditor.Build;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -64,6 +66,15 @@ namespace Runtime.GamePlay.Ball
             if (_dir.magnitude != 0)
             {
                 transform.position += _dir * (speed * time);
+            }
+        }
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            var levelElement = other.GetComponent<LevelElementBase>();
+            if (levelElement != null && levelElement.data.elementType == ElementType.Enemy)
+            {
+                LevelManager.Instance.EndLevel(false);
             }
         }
     }

@@ -8,9 +8,10 @@ namespace Runtime.GamePlay.LevelElement
     {
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (other.gameObject.CompareTag("Ball"))
+            if (other.gameObject.CompareTag("Racket"))
             {
-                LevelManager.Instance.EndLevel(true); ;
+                LevelManager.Instance.EndLevel(true);
+                ;
             }
         }
     }

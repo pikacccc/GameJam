@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 232979971006083054}
   m_Layer: 6
   m_Name: Racket
-  m_TagString: Untagged
+  m_TagString: Racket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -155,6 +155,7 @@ MonoBehaviour:
     decelerationMinSpeed: 0
     isPeriodicDisplay: 0
     period: 0
+    isDestructible: 0
   speed: 4
 --- !u!50 &232979971006083054
 Rigidbody2D:

@@ -60,14 +60,16 @@ namespace Runtime.GamePlay.Level
             //2.失败
             //3.通关
             //这几种都应该由不同的表现
-            if (win && curLevelIndex + 1 == MaxLevelCount)
+            if (win && curLevelIndex + 1 >= MaxLevelCount)
             {
             }
             else if (win && curLevelIndex + 1 < MaxLevelCount)
             {
+                Jump(true);
             }
             else if (!win)
             {
+                Jump(false);
             }
         }
 
@@ -80,21 +82,21 @@ namespace Runtime.GamePlay.Level
         private void Update()
         {
             if (!_sceneInited) return;
-            if (PkGameTime.IsPause && !_playing) return;
+            if (PkGameTime.IsPause || !_playing) return;
             CurLevel.Tick(PkGameTime.GameTime);
         }
 
         private void FixedUpdate()
         {
             if (!_sceneInited) return;
-            if (PkGameTime.IsPause && !_playing) return;
+            if (PkGameTime.IsPause || !_playing) return;
             CurLevel.FixedTick(PkGameTime.GameTime);
         }
 
         private void LateUpdate()
         {
             if (!_sceneInited) return;
-            if (PkGameTime.IsPause && !_playing) return;
+            if (PkGameTime.IsPause || !_playing) return;
             CurLevel.LateTick(PkGameTime.GameTime);
         }
     }

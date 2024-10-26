@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using Runtime.PKGameCore;
-using Runtime.PKGameCore.PKResourceManager;
 using Runtime.PKGameCore.PKTools;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -33,13 +32,13 @@ namespace Runtime.GamePlay.Level
             CurLevel.OnLevelInit();
             CurLevel.OnLevelStart();
             _sceneInited = true;
+            _playing = true;
         }
 
         public void StartGame(int levelIndex = 0)
         {
             this.curLevelIndex = levelIndex;
             StartCoroutine(InitLevel());
-            _playing = true;
         }
 
         public void RecoverLevel()

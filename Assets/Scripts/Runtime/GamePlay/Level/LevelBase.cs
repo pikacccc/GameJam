@@ -38,6 +38,7 @@ namespace Runtime.GamePlay.Level
             _ball.OnLevelInit(levelElementData);
             _racket.OnLevelInit(levelElementData);
             _isShoot = false;
+            CameraManager.Instance.ResetCamPos();
         }
 
         private void InitEjector()
@@ -173,31 +174,41 @@ namespace Runtime.GamePlay.Level
             {
                 if (!_isShoot)
                 {
-                    _ejector.IsShoot = true;
-                    _ejector.gameObject.SetActive(false);
-                    _ball.MoveDir = -_ejector.ray.up;
-
-                    _racket.SetMoveStatus(true);
-                    _ball.SetMoveStatus(true);
-                    CameraManager.Instance.SetMoveStatus(true);
-
-                    _isShoot = true;
+                    ShootBall();
                 }
                 else
                 {
-                    _ball.transform.position = (_racket.transform.position + 0.5f * Vector3.down);
-                    _ejector.gameObject.SetActive(true);
-                    _ejector.IsShoot = false;
-                    if (_ball.ballAttr.IsDead)
-                        _ball.gameObject.SetActive(true);
-                    
-                    _racket.SetMoveStatus(false);
-                    _ball.SetMoveStatus(false);
-                    CameraManager.Instance.SetMoveStatus(false);
-                    
-                    _isShoot = false;
+                    RecycleBall();
                 }
             }
+        }
+
+        public void ShootBall()
+        {
+            _ejector.IsShoot = true;
+            _ejector.gameObject.SetActive(false);
+            _ball.MoveDir = -_ejector.ray.up;
+
+            _racket.SetMoveStatus(true);
+            _ball.SetMoveStatus(true);
+            CameraManager.Instance.SetMoveStatus(true);
+
+            _isShoot = true;
+        }
+
+        public void RecycleBall()
+        {
+            _ball.transform.position = (_racket.transform.position + 0.5f * Vector3.down);
+            _ejector.gameObject.SetActive(true);
+            _ejector.IsShoot = false;
+            if (_ball.ballAttr.IsDead)
+                _ball.gameObject.SetActive(true);
+
+            _racket.SetMoveStatus(false);
+            _ball.SetMoveStatus(false);
+            CameraManager.Instance.SetMoveStatus(false);
+
+            _isShoot = false;
         }
     }
 }

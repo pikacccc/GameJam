@@ -1,4 +1,5 @@
 ﻿using System;
+using UnityEditor.Rendering;
 using UnityEngine.Serialization;
 
 namespace Runtime.GamePlay.Ball
@@ -13,6 +14,8 @@ namespace Runtime.GamePlay.Ball
         public int maxReboundsCount;
         public int curReboundsCount;
 
+        public int maxHp;
+        public int curHp;
         [NonSerialized] public bool IsDead = false;
     }
 }

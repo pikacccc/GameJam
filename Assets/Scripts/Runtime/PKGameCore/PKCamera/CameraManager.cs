@@ -51,6 +51,11 @@ namespace Runtime.PKGameCore.PKCamera
             _isReady = false;
         }
 
+        public void ResetCamPos()
+        {
+            this.virCamObj.transform.position = new Vector3(0, 0, this.virCamObj.transform.position.z);
+        }
+
         public void SwitchToCamera(CinemachineVirtualCameraBase virtualCam, bool force = false)
         {
             if (!IsVaild() && !force) return;
@@ -148,7 +153,7 @@ namespace Runtime.PKGameCore.PKCamera
                 IsMove = false;
             }
         }
-        
+
         public void SetMoveStatus(bool isMove)
         {
             useMove = isMove;

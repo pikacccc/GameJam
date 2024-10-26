@@ -25,5 +25,6 @@ namespace Runtime.GamePlay.LevelElement
         public float decelerationMinSpeed;
         public bool isPeriodicDisplay;
         public float period;
+        public bool isDestructible = false;
     }
 }

@@ -208,7 +208,7 @@ MonoBehaviour:
   maxZoom: 60
   cameraSize: 47.5
   useMove: 1
-  cameraSpeed: 3.5
+  cameraSpeed: 6
 --- !u!1 &1153693079554179075
 GameObject:
   m_ObjectHideFlags: 0

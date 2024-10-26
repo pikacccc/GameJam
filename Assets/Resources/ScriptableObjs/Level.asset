@@ -14,3 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelList:
   - Level1
+  - Level-Intro
+  - Level-Visibility
+  - Level-Visibility_Alpha
+  - Level-CushionAndSpring
+  - Level-BreakWall
+  - Level-BreakWall_Alpha
+  - Level-Light
+  - Level-MoveCamera
+  - Level-MoveCamera_Alpha
+  - Level-ThankYou

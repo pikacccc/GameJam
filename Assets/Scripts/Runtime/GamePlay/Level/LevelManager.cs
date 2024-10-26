@@ -22,7 +22,7 @@ namespace Runtime.GamePlay.Level
         protected override void InitSingleton()
         {
             base.InitSingleton();
-            StartGame();
+            StartGame(curLevelIndex);
         }
 
         private IEnumerator InitLevel()

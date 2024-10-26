@@ -4,7 +4,7 @@ using Runtime.PKGameCore.PKResourceManager;
 using Runtime.PKGameCore.PKTools;
 using Runtime.PKGameCore.UI;
 using UnityEngine;
-using UnityEngine.Rendering.Universal;
+//using UnityEngine.Rendering.Universal;
 
 namespace Runtime.PKGameCore.PKUI
 {
@@ -21,7 +21,7 @@ namespace Runtime.PKGameCore.PKUI
         protected override void InitSingleton()
         {
             base.InitSingleton();
-            Camera.main.GetUniversalAdditionalCameraData().cameraStack.Add(uiCamera);
+            //Camera.main.GetUniversalAdditionalCameraData().cameraStack.Add(uiCamera);
         }
 
         protected override void UninitSingleton()

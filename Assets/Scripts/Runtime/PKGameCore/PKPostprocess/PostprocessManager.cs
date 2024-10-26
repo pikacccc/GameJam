@@ -5,6 +5,6 @@ namespace Runtime.PKGameCore.PKPostprocess
 {
     public class PostprocessManager : SingletonBehaviour<PostprocessManager>
     {
-        public Volume myVolume;
+        //public Volume myVolume;
     }
 }

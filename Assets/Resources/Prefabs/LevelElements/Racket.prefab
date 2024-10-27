@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4124744954422558200}
   - component: {fileID: 6794310449771630116}
   - component: {fileID: 232979971006083054}
+  - component: {fileID: 308098290607485768}
   m_Layer: 6
   m_Name: Racket
   m_TagString: Racket
@@ -184,3 +185,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &308098290607485768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5830630872576399331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09e6a6c35db9ed44bb6cf13e6261d8b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mask: {fileID: 10305, guid: 0000000000000000f000000000000000, type: 0}
+  mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}

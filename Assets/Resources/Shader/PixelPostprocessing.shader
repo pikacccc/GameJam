@@ -18,7 +18,8 @@ Shader "Custom/PixelPostprocessing"
 
         Pass {
             Name "ColorBlitPass"
-
+            ZTest Always
+            ZWrite Off
             HLSLPROGRAM
             #include "Packages/com.unity.render-pipelines.core/ShaderLibrary/Common.hlsl"
             #include "Packages/com.unity.render-pipelines.core/ShaderLibrary/Filtering.hlsl"
@@ -27,10 +28,28 @@ Shader "Custom/PixelPostprocessing"
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/UnityInput.hlsl"
             #include_with_pragmas "Packages/com.unity.render-pipelines.core/ShaderLibrary/FoveatedRenderingKeywords.hlsl"
             #include "Packages/com.unity.render-pipelines.core/ShaderLibrary/FoveatedRendering.hlsl"
-            #pragma vertex Vert
+
+            #pragma vertex vert
             #pragma fragment frag
+            struct appdata
+            {
+                float4 vertex : POSITION;
+                float2 uv : TEXCOORD0;
+            };
 
+            struct v2f
+            {
+                float2 uv : TEXCOORD0;
+                float4 vertex : SV_POSITION;
+            };
 
+            v2f vert (appdata v)
+            {
+                v2f o;
+                o.vertex = TransformObjectToHClip(v.vertex);
+                o.uv = v.uv;
+                return o;
+            }
             #define DITHER
             #define AUTO_MODE
             #define DOWN_SCALE 2.0
@@ -69,7 +88,9 @@ Shader "Custom/PixelPostprocessing"
             TEXTURE2D(_Dither);
             SAMPLER(sampler_Dither);
             TEXTURE2D(_UserLut);
-
+            TEXTURE2D(_Lightmap);
+            SAMPLER(sampler_Lightmap);
+            
             float4 _Dither_TexelSize;
             float _DownScale;
             float _ColorRes;
@@ -103,11 +124,12 @@ Shader "Custom/PixelPostprocessing"
                 return lerp(c1,c2,mixAmt) * factor;
             }
 
-            half4 frag (Varyings input) : SV_Target
+    
+            half4 frag (v2f input) : SV_Target
             {
 
-                UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(input);
-                float4 color = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, input.texcoord);
+                // UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(input);
+                float4 color = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, input.uv);
                 // float2 fragCoord = input.positionCS.xy / _ScreenParam.xy;
                 // return half4(input.texcoord,0,1);
                 //Palette preview
@@ -120,7 +142,9 @@ Shader "Custom/PixelPostprocessing"
     
                     // color = saturate(color);
                     // color.rgb = lut(color.rgb);
-                    color.rgb = GetDitheredPalette(color, input.texcoord / _DownScale);
+                    color.rgb = GetDitheredPalette(color, input.uv / _DownScale);
+                    half r = SAMPLE_TEXTURE2D(_Lightmap, sampler_Lightmap, input.uv).r;
+                    color.rgb *= r;
                     //color.rgb = GetLinearToSRGB(color.rgb); // In LDR do the lookup in sRGB for the user LUT
                     // input.rgb = GetSRGBToLinear(input.rgb);
 
